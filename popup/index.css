@@ -2,7 +2,11 @@ body {
   width: 420px;
   margin: 0;
   padding: 12px;
+
   font-family: sans-serif;
+
+  background: #111111;
+  color: #e8e8e8;
 }
 
 #search {
@@ -13,6 +17,22 @@ body {
   margin-bottom: 8px;
 
   font-size: 14px;
+
+  background: #1c1c1c;
+  color: #f0f0f0;
+
+  border: 1px solid #333333;
+  border-radius: 6px;
+
+  outline: none;
+}
+
+#search:focus {
+  border-color: #666666;
+}
+
+#search::placeholder {
+  color: #777777;
 }
 
 #tabs {
@@ -34,10 +54,12 @@ body {
   gap: 10px;
 
   cursor: pointer;
+
+  border-radius: 6px;
 }
 
 #tabs li:hover {
-  background: rgba(128, 128, 128, 0.15);
+  background: #242424;
 }
 
 #tabs img {
@@ -53,4 +75,6 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  color: #dddddd;
 }
