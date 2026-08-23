@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Search",
+  "version": "0.1.0",
+  "description": "Search and manage Browser tabs",
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "action": {
+    "default_title": "Tab Search",
+    "default_popup": "popup/index.html"
+  }
+
+}

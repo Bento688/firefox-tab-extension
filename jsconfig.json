@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "dom"],
+    "types": [
+      "chrome",
+      "firefox-webext-browser"
+    ]
+  },
+  "include": ["src/**/*"]
+}
+
