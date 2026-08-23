@@ -11,13 +11,34 @@ async function main() {
 
   for (const tab of tabs) {
     const listItem = document.createElement("li");
+    const favIcon = document.createElement("img");
+    const title = document.createElement("span");
 
-    listItem.textContent = tab.title;
+    if (tab.favIconUrl) {
+      favIcon.src = tab.favIconUrl;
+    }    
+    favIcon.width = 16;
+    favIcon.height = 16;
+
+    title.textContent = tab.title;
+
+    listItem.appendChild(favIcon);
+    listItem.appendChild(title);
+
     listItem.id = tab.id;
+
+    listItem.addEventListener("click", async () => {
+      await browser.tabs.update(tab.id, {
+        active: true
+      });
+
+      await browser.windows.update(tab.windowId, {
+        focused: true
+      });
+    });
 
     tabsList.appendChild(listItem);
   }
-
 }
 
 main();

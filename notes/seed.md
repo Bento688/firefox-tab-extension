@@ -6,7 +6,14 @@
 
 ## FEATURES/QUESTIONS/CURIOSITIES THAT I NEED TO IMPLEMENT
 
-- how should I list the available tabs in a list? 
-    - should I modify 
+- [done] display all of the available tabs in a list.
+
+- [implemented the simplest version] make the listItem react and focuses to that tab when I click it.
+
+- need to style the list
+    - for each of the listitem, make it prettier.
+    - show details like:
+        - favIcon
+        - title
 
 
