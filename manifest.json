@@ -11,6 +11,16 @@
   "action": {
     "default_title": "Tab Search",
     "default_popup": "popup/index.html"
+  },
+
+  "commands" : {
+    "toggle-tab-search": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Space",
+        "mac": "Command+Shift+Space",
+      },
+      "description": "Toggle Tab Search"
+    }
   }
 
 }
