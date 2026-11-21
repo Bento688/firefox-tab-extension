@@ -11,13 +11,14 @@ export default defineConfig({
     commands: {
       'toggle-tab-search': {
         suggested_key: {
-          default: 'Ctrl+Shift+Space',
-          mac: 'Command+Shift+Space',
+          default: 'Ctrl+Space',
+          mac: 'MacCtrl + Space'
         },
         description: 'Toggle Tab Search',
       },
     },
   },
+  srcDir: 'src',
   vite: () => ({
     plugins: [tailwindcss()],
   }),
