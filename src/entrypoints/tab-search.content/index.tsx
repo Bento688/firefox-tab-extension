@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { Command, CommandInput } from '#components/ui/command';
 
 import '../../assets/tailwind.css';
+import '../../components/TabSearch.tsx'
+import TabSearch from '../../components/TabSearch.tsx';
 
 export default defineContentScript({
   matches: ['<all_urls>'],
@@ -22,9 +24,7 @@ export default defineContentScript({
 
         const root = ReactDOM.createRoot(app);
         root.render(
-          <Command className="hidden">
-            <CommandInput placeholder="Search tabs..." />
-          </Command>,
+          <TabSearch />
         );
         return root;
       },

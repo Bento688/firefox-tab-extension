@@ -12,7 +12,7 @@ export default defineConfig({
       'toggle-tab-search': {
         suggested_key: {
           default: 'Ctrl+Space',
-          mac: 'MacCtrl + Space'
+          mac: 'MacCtrl+Space'
         },
         description: 'Toggle Tab Search',
       },
